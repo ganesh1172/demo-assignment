@@ -4,25 +4,34 @@ import './App.css';
 import Founder from './pages/Founder';
 import BODirectors from './pages/BODirectors';
 import CleanAwakening from './pages/CleanAwakening';
-import Home from './pages/Home';
+import header_logo from './images/header.png';
 
 function App() {
   return (
     <Router>
-      <div>
-        <NavLink exact to="/">
-        </NavLink>
-        <NavLink exact to='/founders'>
-          Founder
-					</NavLink>
-        <NavLink exact to='/board_of_directors'>
-          About
-					</NavLink>
-        <NavLink exact to='/clean_awakening' activeClassName='is-active'>
-          Posts
-					</NavLink>
+      <div className="container">
+        <img src={header_logo} className="header_image" alt="Header Logo" />
+        <ul>
+          <li><NavLink exact to='/founders' activeStyle={{
+            fontWeight: "bold",
+            color: "black"
+          }} className="nav_link">
+            Founders
+					</NavLink></li>
+          <li><NavLink exact to='/board_of_directors' activeStyle={{
+            fontWeight: "bold",
+            color: "black"
+          }} className="nav_link">
+            Board of Directors
+					</NavLink></li>
+          <li><NavLink exact to='/clean_awakening' activeStyle={{
+            fontWeight: "bold",
+            color: "black"
+          }} className="nav_link">
+            Clean Awakening
+					</NavLink></li>
+        </ul>
         <Switch>
-          <Route exact path="/" component={Home} />
           <Route exact path="/founders" component={Founder} />
           <Route exact path="/board_of_directors" component={BODirectors} />
           <Route exact path="/clean_awakening" component={CleanAwakening} />

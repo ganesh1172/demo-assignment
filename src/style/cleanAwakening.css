@@ -1,0 +1,133 @@
+.clean_container{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 30rem;
+    /* border: 1px solid black; */
+}
+h1{
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.box_I{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box_I_content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 60rem;
+    padding: 0px 6rem;
+}
+.box_I_image{
+    display: flex;
+}
+.box_I_img {
+    height: 20rem;
+    width: 26rem;
+    position: absolute;
+    z-index: 1;
+    margin-top: 5rem;
+}
+.box_I_backimg{
+    height: 23rem;
+    width: 26rem;
+    background-color: rgb(215 193 144 / 64%);
+    position: relative;
+    margin-left: 4rem;
+    margin-top: 2rem;       
+}
+.box_II{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box_II_image{
+    display: flex;
+    margin: auto;
+}
+.box_II_img {
+    height: 20rem;
+    width: 15rem;
+    position: absolute
+}
+.box_II_backimg{
+    height: 16rem;
+    width: 12rem;
+    background-color: rgb(215 193 144 / 64%);
+    position: relative;
+    margin-left: 7rem;
+    margin-top: 9rem;       
+}
+.box_II_content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 60rem;
+    padding: 0px 3rem;
+    line-height: 1.4;
+}
+.box_II_header{
+    text-align: center;
+}
+.box_II_span_text{
+    color: rgb(243, 203, 92);
+}
+.box_III{
+    width: 100%;
+    display: flex;
+}
+.box_III_image{
+    display: flex;
+    margin: 2rem 0 0 0;
+    position: relative;
+}
+.box_III_img {
+    height: 25rem;
+    width: 70rem;
+}
+.box_III_content{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40rem;
+    padding: 0px 4rem;
+    line-height: 1.4;
+    position: absolute;
+    margin-left: 51rem;
+    margin-top: 9rem;
+}
+.box_III_header{
+    text-align: center;
+}
+.box_IV{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.box_IV_image{
+    display: flex;
+    margin: auto;
+}
+.box_IV_img {
+    height: 22rem;
+    width: 16rem;
+    margin: auto 5rem;
+}
+.box_IV_content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 60rem;
+    padding: 0px 3rem;
+    line-height: 1.4;
+}
+.box_IV_header{
+    text-align: center;
+}
