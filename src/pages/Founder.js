@@ -1,9 +1,11 @@
 import React from 'react'
+import CleanAwakening from './CleanAwakening'
+import FadeInSection from '../util/FadeInSection'
 
 function Founder() {
     return (
         <div>
-            <h1>Founders are here!</h1>
+            <FadeInSection><CleanAwakening /></FadeInSection>
         </div>
     )
 }

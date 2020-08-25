@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter as Router, NavLink } from 'react-router-dom';
-import './App.css';
+import { Switch, Route, BrowserRouter as Router, NavLink, Redirect } from 'react-router-dom';
+import './style/App.css';
 import Founder from './pages/Founder';
 import BODirectors from './pages/BODirectors';
 import CleanAwakening from './pages/CleanAwakening';
@@ -32,6 +32,7 @@ function App() {
 					</NavLink></li>
         </ul>
         <Switch>
+          <Redirect exact from="/" to="/clean_awakening" />
           <Route exact path="/founders" component={Founder} />
           <Route exact path="/board_of_directors" component={BODirectors} />
           <Route exact path="/clean_awakening" component={CleanAwakening} />

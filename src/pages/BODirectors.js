@@ -1,9 +1,12 @@
 import React from 'react'
+import CleanAwakening from './CleanAwakening'
+import FadeInSection from '../util/FadeInSection';
 
 function BODirectors() {
     return (
         <div>
-            <h1>Board of Directors are here!</h1>
+            <FadeInSection><CleanAwakening /></FadeInSection>
+
         </div>
     )
 }
